@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".VerMasActivity">
+
+    <ImageButton
+        android:id="@+id/btnAtras"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circular_button"
+        android:elevation="4dp"
+        android:src="@drawable/flecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogoInicio"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="713dp"
+        android:background="@drawable/background_rounded"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivProducto"
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/prd1" />
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:textAlignment="center"
+                android:layout_marginTop="300dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Nombre"
+                android:textColor="#563008"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tvPrecio"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:textAlignment="center"
+                android:layout_marginTop="340dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text="Precio"
+                android:textColor="#563008"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="321dp"
+                android:layout_height="275dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="390dp"
+                android:fontFamily="@font/outfit"
+                android:text="Descripcion"
+                android:textAlignment="center"
+                android:textColor="#563008"
+                android:textSize="18dp" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivDeco"
+        android:layout_width="174dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="760dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/deco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

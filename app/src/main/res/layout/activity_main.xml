@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/ivLogoInicio"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toEndOf="@+id/ivLogoInicio"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/predeterminado" />
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Bienvenido!!"
+        android:textColor="#563008"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoInicio" />
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:srcCompat="@drawable/banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"/>
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="¿Que desea ver?"
+        android:textColor="#563008"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBanner" />
+
+    <Button
+        android:id="@+id/btnCarta"
+        style="@style/MyButtonStyle1"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:text="Carta"
+        app:icon="@drawable/carta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+    <Button
+        android:id="@+id/btnNosotros"
+        style="@style/MyButtonStyle1"
+        android:layout_width="210dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:text="Nosotros"
+        app:icon="@drawable/cat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCarta" />
+
+    <TextView
+        android:id="@+id/tvLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Lo mas vendido"
+        android:textColor="#563008"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNosotros" />
+
+
+    <ImageView
+        android:id="@+id/ivp1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/prd1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel1" />
+
+    <ImageView
+        android:id="@+id/ivp2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/prd3"
+        app:layout_constraintStart_toEndOf="@+id/ivp1"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel1"/>
+
+    <TextView
+        android:id="@+id/nombre1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textAlignment="center"
+        android:text="Pochacco cookie"
+        android:textColor="#563008"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivp1" />
+
+    <TextView
+        android:id="@+id/precio1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/outfit"
+        android:textAlignment="center"
+        android:text="S/ 8.00"
+        android:textColor="#563008"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre1" />
+
+    <TextView
+        android:id="@+id/nombre2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textAlignment="center"
+        android:text="Macarrons x8"
+        android:textColor="#563008"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/nombre1"
+        app:layout_constraintTop_toBottomOf="@id/ivp2" />
+
+    <TextView
+        android:id="@+id/precio2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/outfit"
+        android:textAlignment="center"
+        android:text="S/ 12.00"
+        android:textColor="#563008"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/precio1"
+        app:layout_constraintTop_toBottomOf="@id/nombre2" />
+
+    <ImageView
+        android:id="@+id/ivp3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/prd6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precio1" />
+
+    <ImageView
+        android:id="@+id/ivp4"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/prd5"
+        app:layout_constraintStart_toEndOf="@+id/ivp3"
+        app:layout_constraintTop_toBottomOf="@id/precio2"/>
+
+    <TextView
+        android:id="@+id/nombre3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textAlignment="center"
+        android:text="CakeKitty"
+        android:textColor="#563008"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivp3" />
+
+    <TextView
+        android:id="@+id/nombre4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:textAlignment="center"
+        android:text="Biscuit uni"
+        android:textColor="#563008"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/nombre3"
+        app:layout_constraintTop_toBottomOf="@id/ivp4" />
+
+    <TextView
+        android:id="@+id/precio3"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:paddingBottom="30dp"
+        android:fontFamily="@font/outfit"
+        android:textAlignment="center"
+        android:text="S/ 15.00"
+        android:textColor="#563008"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombre3" />
+
+    <TextView
+        android:id="@+id/precio4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:paddingBottom="30dp"
+        android:fontFamily="@font/outfit"
+        android:textAlignment="center"
+        android:text="S/ 4.00"
+        android:textColor="#563008"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/precio3"
+        app:layout_constraintTop_toBottomOf="@id/nombre3" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

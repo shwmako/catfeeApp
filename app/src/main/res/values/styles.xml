@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Personaliza el color de la barra de estado -->
+        <item name="android:statusBarColor">@color/mi_color_status_bar</item>
+    </style>
+    <style name="MyButtonStyle1" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="backgroundTint">#563008</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+</resources>

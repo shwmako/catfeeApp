@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NosotrosActivity">
+
+
+    <ImageView
+        android:id="@+id/ivLogoInicio"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Nosotros"
+        android:textColor="#563008"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoInicio" />
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:srcCompat="@drawable/banner2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"/>
+
+    <TextView
+        android:id="@+id/tvLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Bienvenido a Catfee"
+        android:textColor="#563008"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBanner" />
+
+    <TextView
+        android:id="@+id/tvDescrip"
+        android:layout_width="380dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfit"
+        android:text="@string/descp"
+        android:textSize="18dp"
+        android:textColor="#563008"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLabel1" />
+
+    <TextView
+        android:id="@+id/tvGaleria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Galeria"
+        android:textColor="#563008"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescrip" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/gato1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGaleria"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/gato2"
+        app:layout_constraintStart_toEndOf="@id/imageView2"
+        app:layout_constraintTop_toBottomOf="@id/tvGaleria"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/gato3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="179dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/gato4"
+        app:layout_constraintStart_toEndOf="@id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="182dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="15dp"
+        app:srcCompat="@drawable/gato5"
+        app:layout_constraintStart_toEndOf="@id/imageView4"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"/>
+
+    <TextView
+        android:id="@+id/tvDescrip2"
+        android:layout_width="380dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/outfit"
+        android:text="@string/decrip2"
+        android:textSize="18dp"
+        android:textColor="#563008"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/ivBanner3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:srcCompat="@drawable/logobanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescrip2"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
